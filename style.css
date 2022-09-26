@@ -26,13 +26,19 @@ header {
 }
 
 main {
-  height: 65vh;
+  height: 60vh;
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
+.com {
+  height: 5vh;
+  margin-left: 20px;
+}
+a {
+  color: #fff;
+}
 .left {
   width: 52rem;
   display: flex;
