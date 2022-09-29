@@ -123,3 +123,22 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 500px) {
+  .between {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+    /* display: block; */
+  }
+  .left {
+    margin-top: 24px;
+  }
+  .message {
+    margin-bottom: 0;
+  }
+  .right {
+    width: auto;
+  }
+}
