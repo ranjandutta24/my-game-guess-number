@@ -15,39 +15,50 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
+  height: 100vh;
+  width: 100vw;
   /* background-color: #60b347; */
 }
 
 /* LAYOUT */
 header {
-  position: relative;
-  height: 35vh;
+  /* position: relative; */
+  /* height: 35vh; */
   border-bottom: 7px solid #eee;
+  padding: 10px;
 }
 
 main {
-  height: 60vh;
+  /* height: 60vh; */
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+.top {
+  display: flex;
+}
 .com {
-  height: 5vh;
+  /* height: 5vh; */
   margin-left: 20px;
+}
+.check {
+  margin-bottom: 10px;
 }
 a {
   color: #fff;
 }
 .left {
-  width: 52rem;
+  /* width: 52rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-top: 45px;
 }
 
 .right {
-  width: 52rem;
+  /* width: 52rem; */
   font-size: 2rem;
 }
 
@@ -55,11 +66,11 @@ a {
 h1 {
   font-size: 4rem;
   text-align: center;
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .number {
@@ -69,7 +80,8 @@ h1 {
   width: 15rem;
   padding: 3rem 0rem;
   text-align: center;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -77,15 +89,18 @@ h1 {
 
 .between {
   font-size: 1.4rem;
-  position: absolute;
+  margin-top: 10px;
+  text-align: center;
+  /* position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 2rem; */
 }
 
 .again {
-  position: absolute;
+  margin-bottom: 10px;
+  /* position: absolute;
   top: 2rem;
-  left: 2rem;
+  left: 2rem; */
 }
 
 .guess {
@@ -98,7 +113,8 @@ h1 {
   width: 25rem;
   text-align: center;
   display: block;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -116,8 +132,11 @@ h1 {
 }
 
 .message {
-  margin-bottom: 8rem;
-  height: 3rem;
+  /* margin-bottom: 8rem;
+  height: 3rem; */
+  font-size: 15px;
+  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .label-score {
@@ -125,20 +144,11 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
-  .between {
+  /* .between {
     display: none;
-  }
+  } */
   main {
     flex-direction: column;
     /* display: block; */
-  }
-  .left {
-    margin-top: 24px;
-  }
-  .message {
-    margin-bottom: 0;
-  }
-  .right {
-    width: auto;
   }
 }
